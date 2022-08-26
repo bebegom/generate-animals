@@ -1,7 +1,6 @@
 import {Button, Container, Form} from 'react-bootstrap'
 import data from '../../data/animals.json'
 import { useState } from 'react'
-import { useEffect } from 'react'
 
 const HomePage = () => {
     const [amount, setAmount] = useState()
@@ -15,7 +14,6 @@ const HomePage = () => {
         e.preventDefault()
 
         shuffle(data)
-        // console.log(data.slice(0, amount))
         setSlicedAnimals(data.slice(0, amount))
     }
 
@@ -27,16 +25,6 @@ const HomePage = () => {
             arr[j] = temp
         }
     }
-    
-    useEffect(() => {
-        if (!slicedAnimals) {
-            return
-        }
-        // console.log(amount)
-        // shuffle(data)
-        console.log(slicedAnimals)
-
-    }, [slicedAnimals])
 
     return (
         <Container className='my-5 d-flex flex-column align-items-center'>
