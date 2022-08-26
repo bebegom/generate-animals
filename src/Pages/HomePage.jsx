@@ -9,8 +9,8 @@ const HomePage = () => {
         <Container className='my-5 d-flex flex-column align-items-center'>
             <Button onClick={handleSubmit} type='submit' variant='secondary' className='my-3'>Generate</Button>
             <Form>
-                <label htmlFor="quantity" className='mx-2'>Choose how many animals you want:</label> {/* TODO: tell the user what max-amount is */}
-                <input type="number" id="quantity" name="quantity" min="1" max="10" /> {/* TODO: change to data.length */}
+                <label htmlFor="quantity" className='mx-2'>Choose how many animals you want:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="224" /> {/* TODO: change to data.length */}
             </Form>
         </Container>
     )
