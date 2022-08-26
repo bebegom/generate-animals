@@ -1,9 +1,17 @@
-import {Container} from 'react-bootstrap'
+import {Button, Container, Form} from 'react-bootstrap'
 
 const HomePage = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('e prevented')
+    }
     return (
-        <Container className='mx-4'>
-            HomePage
+        <Container className='my-5 d-flex flex-column align-items-center'>
+            <Button onClick={handleSubmit} type='submit' variant='secondary' className='my-3'>Generate</Button>
+            <Form>
+                <label htmlFor="quantity" className='mx-2'>Choose how many animals you want:</label> {/* TODO: tell the user what max-amount is */}
+                <input type="number" id="quantity" name="quantity" min="1" max="10" /> {/* TODO: change to data.length */}
+            </Form>
         </Container>
     )
 }
