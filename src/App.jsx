@@ -1,3 +1,4 @@
+import './assets/scss/App.scss'
 import {Routes, Route} from 'react-router-dom'
 import HomePage from './Pages/HomePage'
 import NotFound from './Pages/NotFound'
