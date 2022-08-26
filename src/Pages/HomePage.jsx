@@ -1,9 +1,11 @@
 import {Button, Container, Form} from 'react-bootstrap'
+import data from '../../data/animals.json'
 
 const HomePage = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log('e prevented')
+        console.log(data)
     }
     return (
         <Container className='my-5 d-flex flex-column align-items-center'>
