@@ -1,10 +1,10 @@
-import React from 'react'
+import {Container} from 'react-bootstrap'
 
 const HomePage = () => {
     return (
-        <div>
+        <Container className='mx-4'>
             HomePage
-        </div>
+        </Container>
     )
 }
 
